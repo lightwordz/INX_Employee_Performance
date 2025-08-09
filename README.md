@@ -1,6 +1,8 @@
 # INX Future Inc.
 
-INX Future Inc, is one of the leading data analytics and automation solutions provider with over 15 years of global business presence. In recent years, the employee performance indexes are not healthy and this has become a growing concern among the top management. The CEO Mr. Brain, decided to initiate a data science project, which analyzes the current employee data and find the core underlying causes of the performance issues. He also expects a clear indicators of non-performing employees, so that any penalization of non-performing employee, if required, may not significantly affect other employee morals.
+# Requirements
+
+INX Future Inc, is one of the leading data analytics and automation solutions provider with over 15 years of global business presence.  INX is consistently rated as top 20 best employers past 5 years. In recent years, the employee performance indexes are not healthy and this has become a growing concern among the top management. The CEO Mr. Brain, decided to initiate a data science project, which analyzes the current employee data and find the core underlying causes of the employee performance issues. He also expects a clear indicators of non-performing employees, so that any penalization of non-performing employee, if required, may not significantly affect other employee morals.
 
 The following insights are expected from this project:
 
@@ -13,7 +15,7 @@ The following insights are expected from this project:
 
 ## Analysis
 
-* The data is supervised and categorical. The predictor variables are ordinal and a few among them are nominal. The target variable 'Performance Rating' is ordinal.
+* The data is supervised and categorical. The predictor variables are ordinal and a few among them are nominal. The target variable 'PerformanceRating' is ordinal.
 
 * To analyze the data, various data processing techniques like **Label Encoding** and **Standardization** is used. **Correlation Coeffecient** is used to interpret the relationship between variables. The most important features selected are **Department, Job Role, Environment Satisfaction, Last Salary Hike Percent, Work Life Balance, Experience Years At This Company, Experience Years In Current Role, Years Since Last Promotion, Years With Current Manager**.
 
@@ -23,7 +25,7 @@ The following insights are expected from this project:
 
 ## Summary
 
-The project was done with the purpose of finding out factors which affected the Performance of the employees, training a model which accurately predicts the Performance Rating of the employee, analyzing the data to provide recommendations to improve the performance and gain insights from the analysis. The following steps were carried out:
+The project was done with the purpose of finding out factors affecting the performance of the employees, training a model which accurately predicts the performance rating of the employee, analyzing the data to provide recommendations to improve the performance and gain insights from the analysis. The following steps were carried out:
 
 * Import the data provided, find out the predictor & target variables and look for missing values.
 * Analysis of Department wise performance as asked.
@@ -37,9 +39,10 @@ The project was done with the purpose of finding out factors which affected the 
 
 ## Results
 
-**Random Forest with GridSearchCV** gives **93% accuracy**. The features that are positively correlated are **Environment Satisfaction, Last Salary Hike Percent & Worklife Balance**. This means that if these factors increases, Performance Rating will increase. On the other hand, the features that are negatively correlated are **Years Since Last Promotion, Experience Years at this Company, Experience years in Current Role & Years with Current Manager**. This means that if these factors increases, Performance Rating will go down.
+* Random Forest with GridSearchCV gives **93% accuracy**. The features that are positively correlated are Environment Satisfaction, Last Salary Hike Percent & Worklife Balance. This means that if these factors increases, Performance Rating will increase. On the other hand, the features that are negatively correlated are **Years Since Last Promotion, Experience Years at this Company, Experience years in Current Role & Years with Current Manager. This means that if these factors increases, Performance Rating will go down.
 
 * The top 3 features effecting employee performances are:
+
 1. Employee Environment Satisfaction (**39.5%**)
 2. Employee Last Salary Hike Percent (**33.3%**)
 3. Years since last promotion (**16.7%**)
