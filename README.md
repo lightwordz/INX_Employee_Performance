@@ -60,6 +60,9 @@ The project was done with the purpose of finding out factors affecting the perfo
 ---
 
 ## Recommendation
+
+we can conclude from our analysis the following which can help with improvement in the employee performance ratings:
+
 - Tailored Training: Create personalized training based on experience and background.
 - Competitive Pay: Ensure salaries are competitive, especially for top talent.
 - Faster Promotions: Facilitate quicker promotions for high-achievers (within 4 years).
