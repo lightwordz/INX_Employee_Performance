@@ -11,6 +11,10 @@ The following insights are expected from this project:
 * A trained model which can predict the employee performance based on factors as inputs.
 * Recommendations to improve the employee performance based on insights from analysis.
 
+### Final Project File
+
+You can view the main project file here: [INX Employee Performance Ratings](Employee_Performance_Analysis/processed/INX_EmployeePerformanceRatings.ipynb)
+
 ---
 
 ## Analysis
@@ -69,3 +73,4 @@ we can conclude from our analysis the following which can help with improvement 
 - Flexible Work: Offer flexible arrangements to improve work-life balance.
 - Address Performance Gaps: Target and fix performance issues in Sales and R&D.
 - Promote Well-being: Cultivate a culture of strong work-life balance.
+
