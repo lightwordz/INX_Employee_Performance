@@ -19,7 +19,7 @@ The following insights are expected from this project:
 
 * To analyze the data, various data processing techniques like **Label Encoding** and **Standardization** is used. **Correlation Coeffecient** is used to interpret the relationship between variables. The most important features selected are **Department, Job Role, Environment Satisfaction, Last Salary Hike Percent, Work Life Balance, Experience Years At This Company, Experience Years In Current Role, Years Since Last Promotion, Years With Current Manager**.
 
-* For training the data and predicting the target, algorithms used are **Logistic Regression, Support Vector Machine, Decision Tree, Random Forest, Naive Bayes, K-Nearest Neighbor, XGBoost Classifier** and **Artificial Neural Network**. A separate analysis of Department wise Performance is carried out.
+* For training the data and predicting the target, algorithms used are **Logistic Regression, Support Vector Machine, Decision Tree, Random Forest Classifier, K-Nearest Neighbor, Gradient Boosting Classifier** and **ANN (Multi-layer Perceptron Classifier)**. A separate analysis of Department wise Performance is carried out.
 
 ---
 
@@ -32,26 +32,26 @@ The project was done with the purpose of finding out factors affecting the perfo
 * Label Encoding the ordinal columns.
 * Calculate correlation coeffecient to find out the relationship between variables and then select the important features for analysis.
 * Standardizing the data and splitting it into test and train.
-* Training the data using algorithms like Logistic Regression, Support Vector Machine, Decision Tree, Random Forest, Naive Bayes, K-Nearest Neighbor, XGBoost Classifier and Artificial Neural Network and checking the accuracy to find out which algorithm is the best.
+* Training the data using algorithms like Logistic Regression, Support Vector Machine, Decision Tree, Random Forest, K-Nearest Neighbor, Gradient Boosting Classifier and Artificial Neural Network and checking the accuracy to find out which algorithm is the best.
 * Exporting the model with highest accuracy.
 
 ---
 
 ## Results
 
-* Random Forest with GridSearchCV gives **93% accuracy**. The features that are positively correlated are Environment Satisfaction, Last Salary Hike Percent & Worklife Balance. This means that if these factors increases, Performance Rating will increase. On the other hand, the features that are negatively correlated are **Years Since Last Promotion, Experience Years at this Company, Experience years in Current Role & Years with Current Manager. This means that if these factors increases, Performance Rating will go down.
+* Random Forest with GridSearchCV gives **96.82%% accuracy**. The features that positively correlated are Environment Satisfaction, Last Salary Hike Percent & Worklife Balance. This means that if these factors increases, Performance Rating will increase. On the other hand, the features that are negatively correlated are **Years Since Last Promotion, Experience Years at this Company, Experience years in Current Role & Years with Current Manager. This means that if these factors increases, Performance Rating will go down.
 
 * The top 3 features effecting employee performances are:
 
 1. Employee Environment Satisfaction (**39.5%**)
 2. Employee Last Salary Hike Percent (**33.3%**)
-3. Years since last promotion (**16.7%**)
+3. Work Life Balance (**12%**)
 
 ---
 
 ## Analysis and Insights
 
-* It was observed that the maximum accuracy was obtained when we used **Random Forest with GridSearchCV** which was **93%**. **XGBoost Classifier** also yielded an accuracy of **92.8%**.
+* It was observed that the maximum accuracy was obtained when we used **Random Forest with GridSearchCV** which was **96.82%**.
 
 * The important features that are positively correlated are **Environment Satisfaction, Last Salary Hike Percent & Worklife Balance**. This means that if these factors increases, Performance Rating will increase. On the other hand, the features that are negatively correlated are **Years Since Last Promotion, Experience Years at this Company, Experience years in current role & Years with Current Manager**. This means that if these factors increases, Performance Rating will go down.
 
@@ -60,5 +60,9 @@ The project was done with the purpose of finding out factors affecting the perfo
 ---
 
 ## Recommendation
-
-* From the results, we can conclude that the company should provide a better environment as it increases the performance drastically. The company should increase the salary of the employee from time to time and help them maintain a worklife balance. On the other hand, shuffling the manager from time to time will also affect performance.
+- Tailored Training: Create personalized training based on experience and background.
+- Competitive Pay: Ensure salaries are competitive, especially for top talent.
+- Faster Promotions: Facilitate quicker promotions for high-achievers (within 4 years).
+- Flexible Work: Offer flexible arrangements to improve work-life balance.
+- Address Performance Gaps: Target and fix performance issues in Sales and R&D.
+- Promote Well-being: Cultivate a culture of strong work-life balance.
